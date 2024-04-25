@@ -33,3 +33,20 @@ const changeBanner = () => {
 	dots[i].classList.add("dot_selected");
 }
 
+arrowLeft.addEventListener("click", () => {
+	if (i > 0) {
+		i--;
+	} else {
+		i = slides.length - 1;
+	}
+	changeBanner();
+});
+arrowRight.addEventListener("click", () => {
+	if (i < slides.length - 1) {
+		i++;
+	} else {
+		i = 0;
+	}
+	changeBanner();
+});
+
