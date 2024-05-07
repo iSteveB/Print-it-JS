@@ -17,7 +17,7 @@ const slides = [
 	}
 ]
 
-//Create a carrousel with the slides
+
 
 const bannerImg = document.querySelector(".banner-img");
 const bannerTxt = document.querySelector("#banner > p")
@@ -41,6 +41,7 @@ arrowLeft.addEventListener("click", () => {
 	}
 	changeBanner();
 });
+
 arrowRight.addEventListener("click", () => {
 	if (i < slides.length - 1) {
 		i++;
